@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-WiFi Password Database.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SQLite.swift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Stormpath.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0A14787C37FA2AC8C7D2EBA268DA6042</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F4FD3AAE0ABB1D2F7D78927D557DA2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>397257A8B6AC417638C757C89E3F9128</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D4D2F2A4ADC220C9789DAAEC9D738EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0B8A9749B2FE3B3D0C0D8B276360824</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

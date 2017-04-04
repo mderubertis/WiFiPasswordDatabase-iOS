@@ -12,6 +12,9 @@
 		643305421E5E644C00F21708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643305401E5E644C00F21708 /* Main.storyboard */; };
 		643305441E5E644C00F21708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643305431E5E644C00F21708 /* Assets.xcassets */; };
 		643305471E5E644C00F21708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643305451E5E644C00F21708 /* LaunchScreen.storyboard */; };
+		64567AC11E930FD5005956E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64567AC01E930FD5005956E1 /* User.swift */; };
+		64567AC31E93113C005956E1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64567AC21E93113C005956E1 /* Database.swift */; };
+		E3D5D841835FCA73E7E76E52 /* Pods_WiFi_Password_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828D6131EFF7DE40B48511DD /* Pods_WiFi_Password_Database.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		643305431E5E644C00F21708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		643305461E5E644C00F21708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		643305481E5E644C00F21708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64567AC01E930FD5005956E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		64567AC21E93113C005956E1 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		828D6131EFF7DE40B48511DD /* Pods_WiFi_Password_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiFi_Password_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD65475CBFE3F83C070D0BD9 /* Pods-WiFi Password Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFi Password Database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiFi Password Database/Pods-WiFi Password Database.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B55AA78D56050FB3B96682 /* Pods-WiFi Password Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFi Password Database.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiFi Password Database/Pods-WiFi Password Database.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D5D841835FCA73E7E76E52 /* Pods_WiFi_Password_Database.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5D89EEE4A8D174EBBCF0A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828D6131EFF7DE40B48511DD /* Pods_WiFi_Password_Database.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		643305301E5E644C00F21708 = {
 			isa = PBXGroup;
 			children = (
 				6433053B1E5E644C00F21708 /* WiFi Password Database */,
 				6433053A1E5E644C00F21708 /* Products */,
+				91C08F13746BEA493CFD7720 /* Pods */,
+				1A5D89EEE4A8D174EBBCF0A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,19 @@
 				643305431E5E644C00F21708 /* Assets.xcassets */,
 				643305451E5E644C00F21708 /* LaunchScreen.storyboard */,
 				643305481E5E644C00F21708 /* Info.plist */,
+				64567AC01E930FD5005956E1 /* User.swift */,
+				64567AC21E93113C005956E1 /* Database.swift */,
 			);
 			path = "WiFi Password Database";
+			sourceTree = "<group>";
+		};
+		91C08F13746BEA493CFD7720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD65475CBFE3F83C070D0BD9 /* Pods-WiFi Password Database.debug.xcconfig */,
+				F7B55AA78D56050FB3B96682 /* Pods-WiFi Password Database.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6433054B1E5E644C00F21708 /* Build configuration list for PBXNativeTarget "WiFi Password Database" */;
 			buildPhases = (
+				D56EA8F8FFC9E27DE36395BA /* [CP] Check Pods Manifest.lock */,
 				643305351E5E644C00F21708 /* Sources */,
 				643305361E5E644C00F21708 /* Frameworks */,
 				643305371E5E644C00F21708 /* Resources */,
+				05AE9199A5CF4653E38654EE /* [CP] Embed Pods Frameworks */,
+				686D524EADAC71BAE484B903 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +165,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AE9199A5CF4653E38654EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiFi Password Database/Pods-WiFi Password Database-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		686D524EADAC71BAE484B903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiFi Password Database/Pods-WiFi Password Database-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56EA8F8FFC9E27DE36395BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		643305351E5E644C00F21708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +220,8 @@
 			files = (
 				6433053F1E5E644C00F21708 /* ViewController.swift in Sources */,
 				6433053D1E5E644C00F21708 /* AppDelegate.swift in Sources */,
+				64567AC31E93113C005956E1 /* Database.swift in Sources */,
+				64567AC11E930FD5005956E1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +340,12 @@
 		};
 		6433054C1E5E644C00F21708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD65475CBFE3F83C070D0BD9 /* Pods-WiFi Password Database.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B6NEK6D7L4;
 				INFOPLIST_FILE = "WiFi Password Database/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk.solutions-apex.WiFi-Password-Database";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,10 +355,12 @@
 		};
 		6433054D1E5E644C00F21708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B55AA78D56050FB3B96682 /* Pods-WiFi Password Database.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B6NEK6D7L4;
 				INFOPLIST_FILE = "WiFi Password Database/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk.solutions-apex.WiFi-Password-Database";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +387,7 @@
 				6433054D1E5E644C00F21708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
